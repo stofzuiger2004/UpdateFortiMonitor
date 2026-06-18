@@ -21,7 +21,7 @@ if (Test-Path $cfg) {
     }
 
     Set-AgentSetting "AutoUpdate" "true"
-    Set-AgentSetting "ScheduledUpdate" "11:00"
+    Set-AgentSetting "ScheduledUpdate" "12:00"
 
     Copy-Item $cfg "$cfg.bak" -Force
     $xml.Save($cfg)
